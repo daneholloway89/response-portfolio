@@ -1,62 +1,56 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Dane's IPO</title>
-        <meta charset="utf-8">
-        
-        <!--Linking CSS-->
-        <link rel="stylesheet" type="text/css" href="assets/css/contactstyle.css">
-        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Monoton|Montserrat" rel="stylesheet">
+<!doctype html>
+<html lang="en-us">
 
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="container1">
-            <header>
-                <h1>Dane Holloway</h1>
-            </header>
-
-            <nav>
-
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <header id="main-header">
+        <div class="container">
+          <a href="index2.html" id="logo">Dane Holloway</a>
+          <nav>
+            <a href="index.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </nav>
         </div>
+      </header>
 
-        <div class="container2">
-            <section class="container3">
-                    <div class="container">
-                            <form action="action_page.php">
-                          
-                              <label for="fname">First Name</label>
-                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                          
-                              <label for="lname">Last Name</label>
-                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          
-                              <label for="country">Country</label>
-                              <select id="country" name="country">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
-                              </select>
-                          
-                              <label for="subject">Subject</label>
-                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                          
-                              <input type="submit" value="Submit">
-                          
-                            </form>
-                          </div>
-        </div>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-        <footer>copyright</footer>
-        
-        
-    </body>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
+</body>
+
 </html>
